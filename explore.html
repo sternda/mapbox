@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>explore.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,0); }
+.s1 { color: rgb(0,0,255); font-weight: bold; }
+.s2 { color: rgb(0,0,0); }
+.s3 { color: rgb(0,0,128); font-weight: bold; }
+.s4 { color: rgb(0,128,0); font-weight: bold; }
+.s5 { color: rgb(0,0,255); font-weight: bold; }
+.s6 { color: rgb(0,0,255); }
+.s7 { color: rgb(0,128,0); font-weight: bold; }
+.s8 { color: rgb(0,0,128); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+explore.html</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">html</span><span class="s0">&gt;</span><span class="s2"> 
+</span><span class="s0">&lt;</span><span class="s3">html </span><span class="s1">lang=</span><span class="s4">&quot;en&quot;</span><span class="s0">&gt;</span><span class="s2"> 
+</span><span class="s0">&lt;</span><span class="s3">head</span><span class="s0">&gt;</span><span class="s2"> 
+    </span><span class="s0">&lt;</span><span class="s3">meta </span><span class="s1">charset=</span><span class="s4">&quot;UTF-8&quot;</span><span class="s0">&gt;</span><span class="s2"> 
+    </span><span class="s0">&lt;</span><span class="s3">title</span><span class="s0">&gt;</span><span class="s2">Title</span><span class="s0">&lt;/</span><span class="s3">title</span><span class="s0">&gt;</span><span class="s2"> 
+    </span><span class="s0">&lt;</span><span class="s3">link </span><span class="s1">rel=</span><span class="s4">&quot;stylesheet&quot; </span><span class="s1">href=</span><span class="s4">&quot;http://cdn.leafletjs.com/leaflet/v1.2.0/leaflet.css&quot;</span><span class="s0">/&gt;</span><span class="s2"> 
+    </span><span class="s0">&lt;</span><span class="s3">link </span><span class="s1">href=</span><span class="s4">&quot;https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.css&quot; </span><span class="s1">rel=</span><span class="s4">'stylesheet'</span><span class="s0">/&gt;</span><span class="s2"> 
+    </span><span class="s0">&lt;</span><span class="s3">script </span><span class="s1">src=</span><span class="s4">&quot;http://cdn.leafletjs.com/leaflet/v1.2.0/leaflet.js&quot;</span><span class="s0">&gt;&lt;/</span><span class="s3">script</span><span class="s0">&gt;</span><span class="s2"> 
+    </span><span class="s0">&lt;</span><span class="s3">script </span><span class="s1">src=</span><span class="s4">&quot;https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.js&quot;</span><span class="s0">&gt;&lt;/</span><span class="s3">script</span><span class="s0">&gt;</span><span class="s2"> 
+    </span><span class="s0">&lt;</span><span class="s3">script </span><span class="s1">src=</span><span class="s4">&quot;http://rawgit.com/mapbox/mapbox-gl-leaflet/master/leaflet-mapbox-gl.js&quot;</span><span class="s0">&gt;&lt;/</span><span class="s3">script</span><span class="s0">&gt;</span><span class="s2"> 
+</span><span class="s0">&lt;/</span><span class="s3">head</span><span class="s0">&gt;</span><span class="s2"> 
+</span><span class="s0">&lt;</span><span class="s3">body</span><span class="s0">&gt;</span><span class="s2"> 
+ 
+</span><span class="s0">&lt;</span><span class="s3">div </span><span class="s1">id=</span><span class="s4">&quot;map&quot; </span><span class="s1">style=</span><span class="s4">&quot;</span><span class="s5">width</span><span class="s2">: </span><span class="s6">900</span><span class="s7">px</span><span class="s2">; </span><span class="s5">height</span><span class="s2">: </span><span class="s6">600</span><span class="s7">px</span><span class="s2">;</span><span class="s4">&quot;</span><span class="s0">&gt;&lt;/</span><span class="s3">div</span><span class="s0">&gt;</span><span class="s2"> 
+</span><span class="s0">&lt;</span><span class="s3">div </span><span class="s1">id=</span><span class="s4">&quot;credits&quot;</span><span class="s0">&gt;</span><span class="s2"> 
+    </span><span class="s0">&lt;</span><span class="s3">p</span><span class="s0">&gt; </span><span class="s2">Fall 2017 | GEOG 371 | Dalton Stern </span><span class="s0">&lt;/</span><span class="s3">p</span><span class="s0">&gt;</span><span class="s2"> 
+</span><span class="s0">&lt;/</span><span class="s3">div</span><span class="s0">&gt;</span><span class="s2"> 
+ 
+</span><span class="s0">&lt;</span><span class="s3">script</span><span class="s0">&gt;</span><span class="s2"> 
+    </span><span class="s8">var </span><span class="s2">mymap = L.map(</span><span class="s7">'map'</span><span class="s2">, {center: [</span><span class="s6">44.13</span><span class="s2">, -</span><span class="s6">119.93</span><span class="s2">], zoom: </span><span class="s6">7</span><span class="s2">}); 
+ 
+    mapbox_token=pk.eyJ1Ijoic3Rlcm5kYSIsImEiOiJjajh4ZjJidTEyMGZnMnFvMmFsdmFsMzRxIn0.pBdOK5xPsXEB7EZZgc5AAQ 
+ 
+    </span><span class="s8">var </span><span class="s2">gl = L.mapboxGL({ 
+    accessToken: mapbox_token, 
+    style: </span><span class="s7">'assets/style.json'</span><span class="s2">, 
+    attribution: </span><span class="s7">'Created By &lt;a href=&quot;https://github.com/sternda/&quot;&gt;Dalton Stern&lt;/a&gt;'</span><span class="s2"> 
+}).addTo(map); 
+ 
+</span><span class="s0">&lt;/</span><span class="s3">script</span><span class="s0">&gt;</span><span class="s2"> 
+</span><span class="s0">&lt;/</span><span class="s3">body</span><span class="s0">&gt;</span><span class="s2"> 
+</span><span class="s0">&lt;/</span><span class="s3">html</span><span class="s0">&gt;</span></pre>
+</body>
+</html>
