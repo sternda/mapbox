@@ -10,4 +10,6 @@ The basemap I created was influenced by nature. I wanted to make a basemap that 
 
 ![map](https://sternda.github.io/mapbox/)
 
-![map](https://sternda.github.io/mapbox/)
+https://sternda.github.io/mapbox/index.html
+
+[map](https://sternda.github.io/mapbox/index.html)
